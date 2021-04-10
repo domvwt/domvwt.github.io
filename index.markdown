@@ -4,3 +4,7 @@
 
 layout: home
 ---
+
+*Dominic is an experienced Data Science project lead working in the UK financial sector.*  
+*His interests include MLOps, time series, and using creative visual design to*
+*engage and enhance cognition.*

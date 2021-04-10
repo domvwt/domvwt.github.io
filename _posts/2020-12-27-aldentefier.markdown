@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "aldentefier - fast.ai + FastAPI"
+title:  "aldentefier (fast.ai + FastAPI)"
 date:   2020-12-27 12:00:00 +0100
 categories: computer-vision deep-learning fastai fastapi docker 
 excerpt_separator: <!--more-->
