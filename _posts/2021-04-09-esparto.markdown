@@ -1,0 +1,39 @@
+---
+layout: post
+title:  "esparto"
+date:   2021-04-09 19:47:12 +0100
+categories: python bootstrap web-design frontend reporting
+excerpt_separator: <!--more-->
+---
+
+A minimal frontend web framework for Python - create shareable HTML documents in minutes.
+
+[GitHub][github] - [Docs][documentation] - [PyPI][PyPI]
+
+<!--more-->
+
+---
+
+Sharing reports is a common problem in data science, especially when analyses and model evaluations need to be 
+distributed among non technical audiences. Frameworks such as [Dash][dash] and [Bokeh][bokeh] are excellent options 
+when it comes to producing sophisticated, interactive applications, however they can prove to be overly complex and 
+awkward when the desired output is a simple shareable document.
+
+This is the motivation behind *esparto*: a lightweight framework that aims to do nothing more than produce well 
+formatted pages with minimal effort. There are plans to develop a suite of model evaluation templates with esparto as 
+a backend, but for now it seems worth sharing as a potential middleground between Jupyter Notebooks and some of the 
+more full featured yet complicated solutions.
+
+Check out the [documentation][documentation] and [GitHub repo][github] if you'd like to learn more - or jump straight 
+into an example to see how it works:
+
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/domvwt/esparto/blob/main/docs/examples/iris.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/domvwt/esparto/main?filepath=docs%2Fexamples%2Firis.ipynb)
+
+
+[github]: https://github.com/domvwt/esparto
+[documentation]: https://domvwt.github.io/esparto/
+[PyPI]: https://pypi.org/project/esparto/
+[dash]: https://plotly.com/dash/
+[bokeh]: https://docs.bokeh.org/en/latest/index.html
