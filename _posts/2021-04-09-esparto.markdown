@@ -27,6 +27,7 @@ more full featured yet complicated solutions.
 Check out the [documentation][documentation] and [GitHub repo][github] if you'd like to learn more - or jump straight 
 into an example to see how it works:
 
+<br>
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/domvwt/esparto/blob/main/docs/examples/iris.ipynb)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/domvwt/esparto/main?filepath=docs%2Fexamples%2Firis.ipynb)
