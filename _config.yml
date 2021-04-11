@@ -3,7 +3,7 @@ author:
   name: Dominic Thorn
   email: dominic.thorn@gmail.com
 description: > # this means to ignore newlines until "show_excerpts:"
-  A home for research, pet projects, and ideas.
+  Research, pet projects, and ideas.
 
 show_excerpts: true # set to true to show excerpts on the homepage
 # theme: minima
