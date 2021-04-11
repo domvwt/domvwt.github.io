@@ -14,27 +14,25 @@ Image classification API with a decoupled HTML / JS frontend and [FastAPI][fasta
 
 ---
 
-Jeremy Howard and the team at [fast.ai][fastai] have produced some excellent, free courses on deep learning. 
+The aldentefier app was created to test the combination of [fast.ai][fastai] and [FastAPI][fastapi] for producing a quick 
+proof of concept service. Using the familiar Google [Cloud Run][cloud-run] service for hosting the backend with a [static API 
+portal][web-app] proved to be a useful setup, avoiding the long loading screen when the docker service needs to be cold 
+started. The decoupling also means that, in a production setting, these services can be scaled independently. For example, 
+if the prediction service is called from a number of different client applications. 
+
+The image classification model was developed while following [practical deep learning for coders][practical-dl].
+Jeremy Howard and the team at [fast.ai][fastai] have produced some excellent, free courses on deep learning and AI ethics. 
 The application first approach to teaching is a welcome alternative to teaching from fundamentals and they've been attracting
 a lot of positive attention for their efforts in democratising AI and for the accomplishments of their students. 
 I highly encourage anyone new to deep learning, or looking to quickly produce a working application, to 
 [check out their page][fastai] and [freely available book][fastbook].
 
-Personally, I came across [practical deep learning for coders][practical-dl] while seeking an easy AI application
-to serve over a web API. The [Flask framework][flask] has long been a go to for machine learning engineers when productionising 
-models but due to its design as a general purpose tool it can fall short of other libraries focussing solely on API serving. 
-[FastAPI][fastapi] is one such competitor, offering incredibly fast, aysnchronous request serving. It even produces and serves 
+[FastAPI][fastapi] is a web framework designed specifically for building API services. It's incredibly fast thanks to its 
+asynchronous serving capability and robust due to its strongly enforced type safety. It even produces and serves 
 interactive API docs in [swagger][swagger] and [redoc][redoc] formats right out of the box. Powered by 
 [Starlette][starlette] and [Pydantic][pydantic], it's remarkably quick while being simple and satisfying to develop with.
 
-The aldentefier app was created to test the combination of [fast.ai][fastai] and [FastAPI][fastapi] for producing a quick 
-proof of concept service. Using the familiar Google [Cloud Run][cloud-run] service for hosting the backend and a [static API 
-portal][web-app] proved to be a useful setup, avoiding the long loading screen when the docker service has to cold started. 
-The decoupling also means that, in a production setting, these services can be scaled independently. For example, if the 
-prediction service is called from a number of different client applications. 
-
-The model doesn't do a fantastic job of classifying user submitted photos (this was not a priority for the project...) 
-but it does make its guesses quickly and reliably!
+It should be noted that the model doesn't do a fantastic job of classifying user submitted photos (this was not a priority for the project...) but it does make its guesses quickly and reliably!
 
 <br>
 

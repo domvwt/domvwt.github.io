@@ -24,6 +24,14 @@ formatted pages with minimal effort. There are plans to develop a suite of model
 a backend, but for now it seems worth sharing as a potential middleground between Jupyter Notebooks and some of the 
 more full featured yet complicated solutions.
 
+The library provides a streamlined API that lets users define their page in terms of sections, rows, and columns; and an intelligent wrapping system that automatically converts Python objects into content.
+
+We use the grid system and components from [Bootstrap][bootstrap] to ensure documents adapt to the viewing device and appear immediately familiar and accessible. No knowledge of Bootstrap or web development is required to use the library, however, as these details are conveniently abstracted.
+
+At publishing time, the completed document is passed to [Jinja2][jinja2] and fed into an HTML template with all style details and dependencies captured inline.
+
+Esparto supports content rendering within Jupyter Notebooks, allowing users to interactively and iteratively build documents without disrupting their workflow.
+
 Check out the [documentation][documentation] and [GitHub repo][github] if you'd like to learn more - or jump straight 
 into an example to see how it works:
 
@@ -38,3 +46,5 @@ into an example to see how it works:
 [PyPI]: https://pypi.org/project/esparto/
 [dash]: https://plotly.com/dash/
 [bokeh]: https://docs.bokeh.org/en/latest/index.html
+[bootstrap]: https://getbootstrap.com/
+[jinja2]: https://palletsprojects.com/p/jinja/
