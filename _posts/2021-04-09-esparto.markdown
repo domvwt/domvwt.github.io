@@ -6,7 +6,7 @@ categories: python bootstrap web-design frontend reporting
 excerpt_separator: <!--more-->
 ---
 
-A minimal frontend web framework for Python - create shareable HTML documents in minutes.
+Simple HTML and PDF document generator for Python - create shareable reports in minutes.
 
 [GitHub][github] - [Docs][documentation] - [PyPI][PyPI]
 
@@ -24,22 +24,29 @@ formatted pages with minimal effort. There are plans to develop a suite of model
 a backend, but for now it seems worth sharing as a potential middleground between Jupyter Notebooks and some of the 
 more full featured yet complicated solutions.
 
-The library provides a streamlined API that lets users define their page in terms of sections, rows, and columns; and an intelligent wrapping system that automatically converts Python objects into content.
+The library provides a streamlined API that lets users define their page in terms of sections, rows, and columns; 
+and an intelligent wrapping system that automatically converts Python objects into content.
 
-We use the grid system and components from [Bootstrap][bootstrap] to ensure documents adapt to the viewing device and appear immediately familiar and accessible. No knowledge of Bootstrap or web development is required to use the library, however, as these details are conveniently abstracted.
+We use the grid system and components from [Bootstrap][bootstrap] to ensure documents adapt to the viewing device and 
+appear immediately familiar and accessible. No knowledge of Bootstrap or web development is required to use the library, 
+however, as these details are conveniently abstracted.
 
-At publishing time, the completed document is passed to [Jinja2][jinja2] and fed into an HTML template with all style details and dependencies captured inline.
+At publishing time, the completed document is passed to [Jinja2][jinja2] and fed into an HTML template with all style 
+details and dependencies captured inline.
 
-Esparto supports content rendering within Jupyter Notebooks, allowing users to interactively and iteratively build documents without disrupting their workflow.
+Esparto supports content rendering within Jupyter Notebooks, allowing users to interactively and iteratively build 
+documents without disrupting their workflow.
 
 Check out the [documentation][documentation] and [GitHub repo][github] if you'd like to learn more - or jump straight 
 into an example to see how it works:
 
-<br>
-
+###### Data Analysis - Iris Dataset
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/domvwt/esparto/blob/main/docs/examples/iris.ipynb)
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/domvwt/esparto/main?filepath=docs%2Fexamples%2Firis.ipynb)
 
+###### Interactive Plotting - Bokeh and Plotly
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/domvwt/esparto/blob/main/docs/examples/interactive-plots.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/domvwt/esparto/main?filepath=docs%2Fexamples%2Finteractive-plots.ipynb)
 
 [github]: https://github.com/domvwt/esparto
 [documentation]: https://domvwt.github.io/esparto/
