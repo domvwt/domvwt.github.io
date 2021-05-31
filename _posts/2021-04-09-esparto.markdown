@@ -37,16 +37,16 @@ details and dependencies captured inline.
 Esparto supports content rendering within Jupyter Notebooks, allowing users to interactively and iteratively build 
 documents without disrupting their workflow.
 
-Check out the [documentation][documentation] and [GitHub repo][github] if you'd like to learn more - or jump straight 
-into an example to see how it works:
+Please check out the [documentation][documentation] and [GitHub repo][github] if you'd like to learn more.
 
-###### Data Analysis - Iris Dataset
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/domvwt/esparto/blob/main/docs/examples/iris.ipynb)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/domvwt/esparto/main?filepath=docs%2Fexamples%2Firis.ipynb)
+#### Examples
 
-###### Interactive Plotting - Bokeh and Plotly
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/domvwt/esparto/blob/main/docs/examples/interactive-plots.ipynb)
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/domvwt/esparto/main?filepath=docs%2Fexamples%2Finteractive-plots.ipynb)
+[Iris Report - Data Analysis](https://domvwt.github.io/esparto/examples/iris-report.html)
+
+[Interactive Plots - Bokeh and Plotly](https://domvwt.github.io/esparto/examples/interactive-plots.html)
+
+
+
 
 [github]: https://github.com/domvwt/esparto
 [documentation]: https://domvwt.github.io/esparto/
