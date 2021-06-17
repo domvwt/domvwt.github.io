@@ -1,9 +1,9 @@
-title: domvwt | portfolio
+title: domvwt
 author:
   name: Dominic Thorn
   email: dominic.thorn@gmail.com
 description: > # this means to ignore newlines until "show_excerpts:"
-  Research, pet projects, and ideas.
+  Thoughts, ideas, and projects.
 
 show_excerpts: true # set to true to show excerpts on the homepage
 # theme: minima

@@ -2,11 +2,11 @@
 layout: post
 title:  "esparto"
 date:   2021-04-09 19:47:12 +0100
-categories: python bootstrap web-design frontend reporting
+categories: python bootstrap html pdf reporting
 excerpt_separator: <!--more-->
 ---
 
-Simple HTML and PDF document generator for Python - create shareable reports in minutes.
+Simple HTML and PDF document generator for Python.
 
 [GitHub][github] - [Docs][documentation] - [PyPI][PyPI]
 
@@ -14,25 +14,22 @@ Simple HTML and PDF document generator for Python - create shareable reports in 
 
 ---
 
-Sharing reports is a common problem in data science, especially when analyses and model evaluations need to be 
-distributed among non technical audiences. Frameworks such as [Dash][dash] and [Bokeh][bokeh] are excellent options 
-when it comes to producing sophisticated, interactive applications, however they can prove to be overly complex and 
-awkward when the desired output is a simple shareable document.
+Sharing reports is a common requirement in data science; analyses and model evaluations often need to be 
+made avaialble to peer reviewers, business stakeholders, and internal compliance and validation functions - among others.
+There are some excellent frameworks, such as [Dash][dash] and [Bokeh][bokeh], for creating sophisticated interactive
+applications but when it comes to producing a self contained static document there is a surprising lack of
+satisfying alternatives.
 
-This is the motivation behind *esparto*: a lightweight framework that aims to do nothing more than produce well 
-formatted pages with minimal effort. There are plans to develop a suite of model evaluation templates with esparto as 
-a backend, but for now it seems worth sharing as a potential middleground between Jupyter Notebooks and some of the 
-more full featured yet complicated solutions.
+This is the motivation behind *esparto*: a lightweight framework for producing well 
+formatted pages with minimal effort. I like to think of it as a middleground between a Jupyter Notebook and a fully
+featured interactive dashboard. 
 
-The library provides a streamlined API that lets users define their page in terms of sections, rows, and columns; 
-and an intelligent wrapping system that automatically converts Python objects into content.
-
-We use the grid system and components from [Bootstrap][bootstrap] to ensure documents adapt to the viewing device and 
-appear immediately familiar and accessible. No knowledge of Bootstrap or web development is required to use the library, 
-however, as these details are conveniently abstracted.
-
-At publishing time, the completed document is passed to [Jinja2][jinja2] and fed into an HTML template with all style 
-details and dependencies captured inline.
+Esparto provides a streamlined API that lets users define their page in terms of sections, rows, and columns; 
+and an intelligent wrapping system that automatically converts Python objects into content. 
+The grid system and components are borrowed from [Bootstrap][bootstrap] to ensure documents adapt to viewing devices
+with a clean and consistent style. At publishing time, the completed document is passed to [Jinja2][jinja2] and fed 
+into an HTML template with all style details and dependencies captured inline. There is also the option to save
+the page as a PDF file through integration with [Weasyprint][weasyprint].
 
 Esparto supports content rendering within Jupyter Notebooks, allowing users to interactively and iteratively build 
 documents without disrupting their workflow.
@@ -46,8 +43,6 @@ Please check out the [documentation][documentation] and [GitHub repo][github] if
 [Interactive Plots - Bokeh and Plotly](https://domvwt.github.io/esparto/examples/interactive-plots.html)
 
 
-
-
 [github]: https://github.com/domvwt/esparto
 [documentation]: https://domvwt.github.io/esparto/
 [PyPI]: https://pypi.org/project/esparto/
@@ -55,3 +50,4 @@ Please check out the [documentation][documentation] and [GitHub repo][github] if
 [bokeh]: https://docs.bokeh.org/en/latest/index.html
 [bootstrap]: https://getbootstrap.com/
 [jinja2]: https://palletsprojects.com/p/jinja/
+[weasyprint]: https://weasyprint.org/
